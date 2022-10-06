@@ -10,6 +10,7 @@ venta1=(int)(input("Gasto en la venta 1.: "))
 venta2=(int)(input("Gasto en la venta 2.: "))
 venta3=(int)(input("Gasto en la venta 3.: "))
 
-print("El total de tus ventas + comisión=" ,(venta1+venta2+venta3)*1.1, "€")
+print("El total de tus ventas + comisión= " ,(venta1+venta2+venta3)*1.1, "€")
 
-sueldo=(int)(input)("El total que recibes este mes")
+sueldo=(int)(input("El total que recibes este mes "))
+print("El total que recibirás este mes= ",(venta1+venta2+venta3)*1.1+sueldo, "€")

@@ -4,4 +4,4 @@
 precio = 0
 
 precio=(int)(input("¿Cuánto llevas gastado?"))
-print("El precio total con el descuento del 15%= ",precio-precio*0.15," €")
+print("El precio total con el descuento del 15%= ",precio-(precio*0.15)," €")

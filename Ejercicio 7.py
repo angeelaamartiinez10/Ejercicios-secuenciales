@@ -4,4 +4,4 @@
 
 minutos = (int)(input("Dime los minutos "))
 
-print(f" Los {minutos} minutos son: {int(minutos/60)} horas y {minutos%60} segundos")
+print(f" Los {minutos} minutos son: {int(minutos/60)} horas y {minutos%60} minutos")
