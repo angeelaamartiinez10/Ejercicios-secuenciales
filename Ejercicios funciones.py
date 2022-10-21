@@ -8,24 +8,36 @@ def ejer1():
     print("tu nombre es:" ,nombre,)
 ejer1()
 
-print("EJERCICIO 2: AREA")
-def ejer2():
-    base=0
-    altura=0
-    base=(int)(input("¿Cúanto mide la base? "))
-    altura=(int)(input("¿Cúanto mide la altura? "))
-    print("El área es: " ,base * altura, )
-ejer2()
+print("EJERCICIO 2: AREA")      
+def calarea(base:int,altura:int):
+    area=base * altura
+    return area
+def calperimetro(base:int, altura:int):
+    perimetro=base*2+altura*2
+    return perimetro
+def listadelcaluloAyP(base:int,altura:int):
+    vLista=[]
+    area=calarea(base,altura)
+    perimetro=calperimetro(altura,base)
+    vLista.append(area)
+    vLista.append(perimetro)
+    return vLista
+
+#principal
+base=(int)(input("¿Cúanto mide la base? "))
+altura=(int)(input("¿Cúanto mide la altura? "))
+
+vNum = listadelcaluloAyP(base,altura)
+print("El área es: ",vNum[0])
+print("El perímetro es. ",vNum[1])
 
 print("EJERCICIO 3: HIPOTENUSA")
-def ejer3():
+def ejer3(cat1:int,cat2:int):
     from math import sqrt
-    cat1=0
-    cat2=0
-    cat1=(int)(input("¿Cúanto mide el primer cateto? "))
-    cat2=(int)(input("¿Cúanto mide el segundo cateto? "))
     print("La hipotenusa del triángulo rectángulo: " ,sqrt(cat1**2+cat2**2 ),  )
-ejer3()
+    return (sqrt(cat1**2+cat2**2 ))
+print(ejer3((5,9)))
+
 
 print("EJERCICIO 4: CALCULADORA +-*/")
 def ejer4():
